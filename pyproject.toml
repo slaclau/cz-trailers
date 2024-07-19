@@ -23,6 +23,8 @@ local_scheme = "[+{node}?{distance}>0][[+?{distance}==0:.]d{node_date}?{dirty}==
 tag_format = "$version"
 version_scheme = "pep440"
 version_provider = "scm"
+major_version_zero = true
+update_changelog_on_bump = true
 
 [project.entry-points."commitizen.plugin"]
 cz-trailers = "cz_trailers:ConventionalCommitsCzTrailers"

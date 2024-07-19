@@ -15,7 +15,7 @@
 - {{ change.message }}
 {%- endif %}
 {% if change.footers.pr %} ({{ change.footers.pr | join(", ") }}){% endif %}
- [{{ change.commit.author }}]({{ change.commit.author_email }})
+ [{{ change.author }}]({{ change.author_email }}) ({{ change.sha1 }})
 {% endfor %}
 {% endfor %}
 {% endfor %}
