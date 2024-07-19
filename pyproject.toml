@@ -19,5 +19,11 @@ version_file = "_version.py"
 version_scheme = "[{tag}?{distance}==0:{next_tag}][.dev{distance}?{distance}>0]"
 local_scheme = "[+{node}?{distance}>0][[+?{distance}==0:.]d{node_date}?{dirty}==True]"
 
+[tool.commitizen]
+tag_format = "$version"
+version_scheme = "pep440"
+version_provider = "scm"
+major_version_zero = true
+
 [project.entry-points."commitizen.plugin"]
 cz-trailers = "cz_trailers:ConventionalCommitsCzTrailers"
