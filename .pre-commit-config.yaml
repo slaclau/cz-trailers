@@ -9,8 +9,8 @@ repos:
     - commit-msg
  #   additional_dependencies:
 #    - cz-trailers
-  - id: commitizen-branch
-    stages:
-    - push
+#  - id: commitizen-branch
+#    stages:
+#    - push
   repo: https://github.com/commitizen-tools/commitizen
   rev: v3.27.0
